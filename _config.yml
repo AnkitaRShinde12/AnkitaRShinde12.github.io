@@ -1,0 +1,51 @@
+```yaml
+# Site Settings
+title: "Your Name"
+description: "Assistant Professor in Economics at Your University"
+url: "https://your-username.github.io"
+baseurl: ""
+
+# Personal Information
+author:
+  name: "Your Name"
+  bio: "Assistant Professor in Economics at Your University"
+  location: "United States"
+  email: "your.email@university.edu"
+  twitter: "yourusername"
+  linkedin: "yourusername"
+  github: "yourusername"
+  orcid: "0000-0000-0000-0000"
+
+# Build Settings
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "default"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Reading Files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Output
+permalink: /:categories/:title/
+timezone: America/New_York
+```
