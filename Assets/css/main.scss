@@ -1,6 +1,3 @@
-```scss
----
----
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
@@ -13,4 +10,3 @@
 .author__urls-wrapper {
   position: relative;
 }
-```

@@ -1,17 +1,17 @@
 
-title: "Your Name"
+title: "Ankita Shinde"
 description: "Assistant Professor in Economics at Your University"
-url: "https://your-username.github.io"
+url: "https://ankitarshinde12.github.io"
 baseurl: ""
 
 author:
-  name: "Your Name"
+  name: "Ankita Shinde"
   bio: "Assistant Professor in Economics at Your University"
   location: "United States"
-  email: "your.email@university.edu"
-  twitter: "yourusername"
-  linkedin: "yourusername"
-  github: "yourusername"
+  email: "ankitarshinde12@nyu.edu"
+  twitter: "Ankita Shinde"
+  linkedin: "Ankita Shinde"
+  github: "Ankita Shinde"
   orcid: "0000-0000-0000-0000"
 
 remote_theme: mmistakes/minimal-mistakes
