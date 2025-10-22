@@ -1,12 +1,4 @@
-```markdown
----
-layout: single
-title: "CV"
-permalink: /cv/
-author_profile: true
----
-
-You can download a PDF copy of my CV [here](/assets/files/cv.pdf).
+You can download a PDF copy of my CV [here](/assets/files/ShindeAnkitaRaja-resume.pdf).
 
 
   
@@ -20,5 +12,3 @@ You can download a PDF copy of my CV [here](/assets/files/cv.pdf).
       height: 500px !important;
     }
   }
-
-```

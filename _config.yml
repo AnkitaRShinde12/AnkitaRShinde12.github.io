@@ -1,18 +1,17 @@
-
-title: "Ankita Shinde"
-description: "Assistant Professor in Economics at Your University"
+title: "Ankita R. Shinde"
+description: "PhD Candidate in Mechanical Engineering at NYU Tandon School of Engineering"
 url: "https://ankitarshinde12.github.io"
 baseurl: ""
 
 author:
-  name: "Ankita Shinde"
-  bio: "Assistant Professor in Economics at Your University"
-  location: "United States"
-  email: "ankitarshinde12@nyu.edu"
-  twitter: "Ankita Shinde"
-  linkedin: "Ankita Shinde"
-  github: "Ankita Shinde"
-  orcid: "0000-0000-0000-0000"
+  name: "Ankita R. Shinde"
+  bio: "PhD Candidate in Mechanical Engineering | Biomedical Scaffolds & Additive Manufacturing"
+  location: "New York, United States"
+  email: "axs10184@nyu.edu"
+  linkedin: "https://www.linkedin.com/in/ankitarshinde12?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  github: "ankitarshinde12"
+  orcid: "0000-0001-8521-2659"
+  avatar: "/assets/images/profile.png"
 
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default"
