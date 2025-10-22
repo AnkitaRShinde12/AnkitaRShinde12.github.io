@@ -318,3 +318,158 @@ html { scroll-behavior: smooth; }
     gap: 1em;
   }
 }
+
+.page,
+.sidebar,
+.notice {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.page:hover,
+.sidebar:hover,
+.notice:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(102, 126, 234, 0.15);
+}
+
+/* Section transitions */
+h2, h3, h4 {
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+h2:hover {
+  color: #5a67d8;
+  border-color: #764ba2;
+}
+
+/* Buttons or links styled as call-to-action */
+a.button, .btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.6em 1.4em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+a.button:hover, .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+}
+
+/* Subtle floating animation for hero/profile section */
+.author__avatar {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Animated accent line under titles */
+.page__title {
+  position: relative;
+  overflow: hidden;
+}
+
+.page__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.5s ease;
+}
+
+.page__title:hover::after {
+  width: 100%;
+}
+
+/* Card hover effects for posts/projects */
+.archive__item {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.archive__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+}
+
+/* Animated gradient for header/nav */
+.masthead {
+  background: linear-gradient(270deg, #667eea, #764ba2, #5a67d8);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Footer gradient pulse */
+.page__footer {
+  animation: footerPulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes footerPulse {
+  from { background: linear-gradient(135deg, #667eea, #764ba2); }
+  to { background: linear-gradient(135deg, #6b8df2, #845ab9); }
+}
+
+/* Subtle fade-in effect for all main content */
+.page__content > * {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.page__content > *:nth-child(1) { animation-delay: 0.1s; }
+.page__content > *:nth-child(2) { animation-delay: 0.2s; }
+.page__content > *:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Improve code block styling if any */
+.highlight, pre, code {
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: 6px;
+  padding: 0.5em 0.8em;
+  color: #333;
+  font-size: 0.95em;
+  overflow-x: auto;
+}
+
+/* Make link hover transitions smoother */
+a {
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+
+/* Reduce visible pagination clutter */
+.pagination,
+.pagination a,
+.pagination .previous,
+.pagination .next {
+  display: none !important;
+}
