@@ -1,3 +1,9 @@
+---
+layout: single
+title: "Research"
+permalink: /research/
+author_profile: true
+---
 ## Current Research
 
 ### Magnetic Scaffolds for Bone Regeneration and Cancer Treatment

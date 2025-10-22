@@ -1,3 +1,8 @@
+---
+layout: home
+author_profile: true
+title: "Ankita R. Shinde"
+---
 ## About Me
 
 I am a PhD candidate in Mechanical Engineering at NYU Tandon School of Engineering, working in Dr. Lukasz Witek's lab. My research focuses on developing advanced biomedical scaffolds for bone tissue regeneration and cancer treatment using additive manufacturing techniques.

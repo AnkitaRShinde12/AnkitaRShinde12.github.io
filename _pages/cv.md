@@ -1,3 +1,10 @@
+---
+layout: single
+title: "CV"
+permalink: /cv/
+author_profile: true
+---
+
 You can download a PDF copy of my CV [here](/assets/files/ShindeAnkitaRaja-resume.pdf).
 
 
