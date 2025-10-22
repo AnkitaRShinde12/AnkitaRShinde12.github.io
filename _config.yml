@@ -36,6 +36,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+      show_date: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
 
 permalink: /:categories/:title/
 timezone: America/New_York
