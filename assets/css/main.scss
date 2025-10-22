@@ -43,10 +43,16 @@ body::after {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   margin: 2em auto;
-  max-width: 1280px;
+  max-width: 1400px;
   position: relative;
   z-index: 1;
   backdrop-filter: blur(10px);
+  padding: 0;
+}
+
+/* Wider layout for better space utilization */
+.page__inner-wrap {
+  max-width: 100%;
 }
 
 /* Masthead styling */
@@ -59,7 +65,9 @@ body::after {
 }
 
 .masthead__inner-wrap {
-  padding: 1em 1em;
+  padding: 1.2em 2em;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .site-title {
@@ -69,15 +77,20 @@ body::after {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.greedy-nav {
+  background: transparent;
+}
+
 .greedy-nav a {
   color: rgba(255, 255, 255, 0.95) !important;
   font-weight: 500;
   transition: all 0.3s ease;
+  padding: 0.5em 1em;
 }
 
 .greedy-nav a:hover {
   color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 6px;
 }
 
@@ -85,14 +98,23 @@ body::after {
   background: #ffffff;
 }
 
-/* Author profile sidebar with PNG cutout support */
+/* Sidebar adjustments for better spacing */
 .sidebar {
+  width: 280px;
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
   border-radius: 12px;
-  padding: 1.5em;
+  padding: 2em 1.5em;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 2em 0 2em 2em;
 }
 
+@media (min-width: 80em) {
+  .sidebar {
+    width: 320px;
+  }
+}
+
+/* Author profile with better spacing */
 .author__avatar {
   display: table-cell;
   vertical-align: top;
@@ -103,38 +125,40 @@ body::after {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 0.5em;
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+  margin-bottom: 1.5em;
 }
 
 .author__avatar img {
   max-width: 100%;
   border-radius: 50%;
   background: transparent;
-  /* Perfect for PNG cutouts */
   object-fit: cover;
 }
 
 .author__name {
   color: #667eea;
   font-weight: 700;
-  font-size: 1.4em;
-  margin-top: 1em;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .author__bio {
-  margin: 0.5em 0 1em;
+  margin: 1em 0 1.5em;
   color: #555;
-  font-size: 0.95em;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.7;
 }
 
-/* Social icons styling */
+/* Social icons with better spacing */
 .author__urls {
   list-style: none;
   padding: 0;
+  margin-top: 1.5em;
 }
 
 .author__urls li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.7em;
 }
 
 .author__urls a {
@@ -142,8 +166,9 @@ body::after {
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  padding: 0.3em 0.5em;
+  padding: 0.5em 0.8em;
   border-radius: 6px;
+  font-size: 0.95em;
 }
 
 .author__urls a:hover {
@@ -152,72 +177,121 @@ body::after {
   transform: translateX(5px);
 }
 
-/* Page content styling */
+/* Main content area with generous spacing */
 .page__content {
-  padding: 2em;
+  padding: 3em 4em;
+  font-size: 1.05em;
+  line-height: 1.8;
+  max-width: 100%;
 }
 
+@media (max-width: 64em) {
+  .page__content {
+    padding: 2em;
+  }
+}
+
+/* Page title with better spacing */
 .page__title {
   color: #667eea;
   font-weight: 700;
+  font-size: 2.5em;
   border-bottom: 3px solid #667eea;
   padding-bottom: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 0;
 }
 
-/* Headers with gradient accent */
+/* Headers with improved spacing and hierarchy */
 h2 {
   color: #764ba2;
   font-weight: 600;
-  margin-top: 1.5em;
-  padding-bottom: 0.3em;
+  font-size: 1.8em;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
   border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+}
+
+h2:first-of-type {
+  margin-top: 1em;
 }
 
 h3 {
   color: #667eea;
   font-weight: 600;
-  margin-top: 1.2em;
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+h4 {
+  color: #555;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.8;
+  color: #333;
 }
 
 /* Links styling */
 a {
   color: #667eea;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 a:hover {
   color: #764ba2;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-/* Research/publication cards */
-.page__content > p,
-.page__content > ol,
-.page__content > ul {
-  margin-bottom: 1.3em;
+/* List spacing */
+.page__content > ul,
+.page__content > ol {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+.page__content li {
+  margin-bottom: 0.8em;
   line-height: 1.8;
 }
 
+/* Strong text */
 .page__content strong {
   color: #333;
   font-weight: 600;
 }
 
-/* Professional highlight boxes */
+/* Professional highlight boxes with better spacing */
 .notice {
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
   border-left: 4px solid #667eea;
   border-radius: 8px;
-  padding: 1.5em;
-  margin: 1.5em 0;
+  padding: 2em;
+  margin: 2em 0;
+}
+
+/* Horizontal rule spacing */
+hr {
+  margin: 3em 0;
+  border: 0;
+  border-top: 2px solid rgba(102, 126, 234, 0.2);
 }
 
 /* Footer styling */
 .page__footer {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: rgba(255, 255, 255, 0.9);
-  margin-top: 2em;
+  margin-top: 3em;
+  padding: 2em 2em;
   border-radius: 0 0 12px 12px;
 }
 
@@ -229,14 +303,99 @@ a:hover {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* PDF viewer styling */
-iframe {
+/* PDF viewer styling with better spacing */
+iframe, object, embed {
   border: 2px solid rgba(102, 126, 234, 0.3);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2em;
+}
+
+/* Custom list styling with better spacing */
+ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+ul li {
+  position: relative;
+  padding-left: 0.5em;
+}
+
+ul li:before {
+  content: "▸";
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: -1.2em;
+}
+
+/* Ordered lists for publications with better spacing */
+ol {
+  counter-reset: item;
+  padding-left: 0;
+  list-style: none;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 2em;
+  padding-left: 3em;
+  position: relative;
+  line-height: 1.8;
+}
+
+ol li:before {
+  content: counter(item);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  font-size: 0.9em;
+}
+
+/* Section spacing */
+.page__content > *:first-child {
+  margin-top: 0;
+}
+
+/* Block quotes if used */
+blockquote {
+  margin: 2em 0;
+  padding: 1.5em 2em;
+  background: rgba(102, 126, 234, 0.05);
+  border-left: 4px solid #667eea;
+  border-radius: 0 8px 8px 0;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .page__content {
+    padding: 2em 3em;
+    font-size: 1em;
+  }
+  
+  .page__title {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
 @media (max-width: 768px) {
   .page {
     margin: 1em;
@@ -244,7 +403,16 @@ iframe {
   }
   
   .sidebar {
-    margin-bottom: 2em;
+    margin: 1.5em;
+    width: calc(100% - 3em);
+  }
+  
+  .page__content {
+    padding: 1.5em;
+  }
+  
+  .masthead__inner-wrap {
+    padding: 1em;
   }
   
   body {
@@ -257,47 +425,14 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Professional list styling */
-ul {
-  list-style: none;
-  padding-left: 0;
+/* Better link visibility in content */
+.page__content a {
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
-ul li:before {
-  content: "▸";
-  color: #667eea;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-/* Ordered lists for publications */
-ol {
-  counter-reset: item;
-  padding-left: 0;
-}
-
-ol li {
-  counter-increment: item;
-  margin-bottom: 1em;
-  padding-left: 2em;
-  position: relative;
-}
-
-ol li:before {
-  content: counter(item);
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 0.1em;
-  font-size: 0.85em;
+.page__content a:hover {
+  border-bottom-color: #667eea;
+  text-decoration: none;
 }
