@@ -84,7 +84,7 @@ body::before {
 
 /* --- SIDEBAR / AUTHOR CARD --- */
 .sidebar {
-  width: 300px;
+  width: 400px;
   background: rgba(255, 255, 255, 0.92);
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
@@ -101,12 +101,13 @@ body::before {
 
 .author__avatar {
   display: block;
-  width: 100%;
+  width: 140%;
   margin-bottom: 1.5em;
+  margin-left: -20%;
 }
 
 .author__avatar img {
-  width: 100%;
+  width: 140%;
   border-radius: 50%;
   box-shadow: 0 6px 20px rgba(102,126,234,0.25);
 }
