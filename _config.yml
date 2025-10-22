@@ -12,6 +12,7 @@ author:
   github: "ankitarshinde12"
   orcid: "0000-0001-8521-2659"
   avatar: "/assets/images/profile.png"
+  scholar: "citations?user=dHAtDPMAAAAJ&hl=en"
 
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default"
