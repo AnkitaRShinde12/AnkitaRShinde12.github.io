@@ -3,6 +3,7 @@ layout: single
 title: "CV"
 permalink: /cv/
 author_profile: true
+classes: wide
 ---
 
 <p>You can download a PDF copy of my CV <a href="/assets/files/ShindeAnkitaRaja-resume.pdf" download>here</a>.</p>
