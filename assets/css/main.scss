@@ -94,27 +94,31 @@ body::before {
   top: 1.5em;
   transition: transform 0.3s ease;
 }
+
 .sidebar:hover {
   transform: translateY(-3px);
 }
+
 .author__avatar {
   display: block;
   width: 100%;
-  height: 400px;  /* Fixed height for tall portrait image */
+  height: 450px;  /* Increased height for better portrait display */
   margin-bottom: 1.5em;
-  margin-left: 0;  /* Reset centering */
-  overflow: hidden;  /* Crop overflow */
-  border-radius: 16px;  /* Rounded corners instead of circle */
+  margin-left: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  animation: none !important;  /* Remove float animation */
+  transform: none !important;  /* Prevent transform issues */
 }
+
 .author__avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* Crop and center the image */
-  object-position: center top;  /* Focus on top/face area */
+  object-fit: cover;
+  object-position: center 20%;  /* Show upper 20% of image (face area) */
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(102,126,234,0.25);
 }
-
 .author__name {
   color: #4c55d8;
   font-weight: 700;
@@ -366,18 +370,6 @@ a.button:hover, .btn:hover {
 }
 
 /* Subtle floating animation for hero/profile section */
-.author__avatar {
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
 
 /* Animated accent line under titles */
 .page__title {
