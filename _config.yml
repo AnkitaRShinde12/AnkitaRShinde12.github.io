@@ -1,7 +1,19 @@
 title: "Ankita R. Shinde"
-description: "PhD Candidate in Mechanical Engineering at NYU Tandon School of Engineering"
+description: "PhD Candidate in Mechanical Engineering specializing in Biomedical Scaffolds and Additive Manufacturing at NYU Tandon"
 url: "https://ankitarshinde12.github.io"
 baseurl: ""
+
+# SEO and Social Media Meta Tags
+locale: "en-US"
+name: "Ankita R. Shinde"
+
+# Open Graph / Social Media Preview
+og_image: "/assets/images/profile.png"
+social:
+  name: "Ankita R. Shinde"
+  links:
+    - "https://www.linkedin.com/in/ankitarshinde12"
+    - "https://github.com/ankitarshinde12"
 
 author:
   name: "Ankita R. Shinde"
@@ -25,6 +37,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 include:
   - _pages
